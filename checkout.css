@@ -34,8 +34,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #b2dfdb; /* Background color for the navbar */
-    color: #2e7d32; /* Text color for the navbar */
+    background-color: #4b6cb3; /* Background color for the navbar */
+    color: #ffffff; /* Text color for the navbar */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +56,7 @@ header img.logo {
 header h1 {
     font-size: 30px;
     font-weight: 600;
-    color: #2e7d32; /* Text color for the title */
+    color: #ffffff; /* Text color for the title */
 }
 
 header nav {
@@ -76,14 +76,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #2e7d32; /* Text color for navbar links */
+    color: #f9f9f9; /* Text color for navbar links */
     font-size: 24px;
     padding: 8px 12px;
     text-decoration: none;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background-color: #2e7d32; /* Hover color for navbar links */
+    background-color: #849ad7; /* Hover color for navbar links */
     color: #ffffff; /* Text color on hover */
     border-radius: 5px;
 }
@@ -94,14 +94,14 @@ nav ul li .nav-text {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    background-color: #b2dfdb; /* Background color for tooltip */
+    background-color: #ffffff; /* Background color for tooltip */
     padding: 5px 10px;
     border-radius: 3px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     font-size: 14px;
-    color: #2e7d32; /* Text color for tooltip */
+    color: #110f0f; /* Text color for tooltip */
 }
 
 nav ul li:hover .nav-text {
