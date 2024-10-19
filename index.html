@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UniAction - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header img.logo {
+            height: 50px;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 30px;
+            font-weight: 600;
+            align-items: center;
+        }
+        header nav {
+            display: flex;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            font-size: 24px;
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+        nav ul li .nav-text {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background-color: #007bff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            font-size: 14px;
+        }
+        nav ul li:hover .nav-text {
+            opacity: 1;
+            visibility: visible;
+        }
+        section.hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        section.hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        section.hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        section.hero a {
+            background-color: #fff;
+            color: #007bff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        section.hero a:hover {
+            background-color: #f4f4f4;
+        }
+        section.features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+        .feature-box {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+            padding: 30px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        .feature-box h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #007bff;
+        }
+        .feature-box p {
+            font-size: 16px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            section.features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="Logo UniAction.jpg" alt="Λογότυπο" class="logo"> <!-- Εδώ βάζεις το λογότυπο -->
+        <h1>UniAction</h1>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active"><i class="fas fa-home"></i></a>
+                <span class="nav-text">Αρχική</span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                <span class="nav-text">Δραστηριότητες</span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <span class="nav-text">Επικοινωνία</span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <span class="nav-text">Προφίλ</span>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Καλώς Ήρθατε στην Πλατφόρμα</h1>
+        <p>Αναζητήστε και συμμετάσχετε σε συνέδρια, εθελοντικές δράσεις, πολιτιστικές και αθλητικές δραστηριότητες!</p>
+        <a href="#">Ξεκινήστε Τώρα</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature-box">
+        <h3>Συνέδρια</h3>
+        <p>Συμμετοχή σε ακαδημαϊκά συνέδρια και σεμινάρια για να βελτιώσετε τις γνώσεις σας.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Εθελοντικές Δράσεις</h3>
+        <p>Συμβάλετε στην κοινότητα και αποκτήστε εμπειρία μέσω εθελοντικών δράσεων.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Πολιτιστικές Δραστηριότητες</h3>
+        <p>Συμμετέχετε σε πολιτιστικές εκδηλώσεις και γνωρίστε νέους ανθρώπους.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Αθλητικές Ομάδες</h3>
+        <p>Συμμετοχή σε αθλητικές ομάδες για φυσική δραστηριότητα και διασκέδαση.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Ημέρες Καριέρας</h3>
+        <p>Συμμετέχετε σε εκδηλώσεις που ενισχύουν την καριέρα σας με επαγγελματικές ευκαιρίες.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Φοιτητικές Δραστηριότητες. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+</footer>
+
+</body>
+</html>
