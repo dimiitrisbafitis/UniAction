@@ -95,6 +95,7 @@ section.hero {
     text-align: center;
     color: white;
     padding: 0 20px;
+    background-color: #FFF3E1;
 }
 
 section.hero h1 {
@@ -107,7 +108,7 @@ section.hero h1 {
 section.hero p {
     font-size: 20px;
     margin-bottom: 40px;
-    color: #ffffff; /* Λευκό χρώμα για το κείμενο στο hero section */
+    color: #1c551e; /* Λευκό χρώμα για το κείμενο στο hero section */
 }
 
 section.hero a {
@@ -183,61 +184,3 @@ footer p {
         margin-bottom: 20px;
     }
 }
-
-/* Υφιστάμενο CSS ... */
-
-section.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.activity-type {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #2e7d32;
-    border-radius: 5px;
-    margin-right: 10px;
-    background-color: white; /* Λευκό background για το dropdown */
-    color: #2e7d32; /* Χρώμα κειμένου στο dropdown */
-}
-
-.search-container input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #2e7d32;
-    border-radius: 5px;
-    margin-right: 10px;
-    width: 200px; /* Ρυθμίστε το πλάτος του πεδίου αναζήτησης */
-}
-
-.search-container button {
-    padding: 10px 20px;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.search-container button:hover {
-    background-color: #b2dfdb; /* Χρώμα hover για το κουμπί αναζήτησης */
-    color: #2e7d32; /* Χρώμα κειμένου στο hover */
-
-}
-
-/* Υφιστάμενο CSS ... */

@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="Logo UniAction.jpg" alt="Λογότυπο" class="logo">
+            <img src="LOGO.png" alt="Λογότυπο" class="logo">
             <h1>UniAction</h1>
         </div>
         <nav>
@@ -41,34 +41,51 @@
     <main class="container mt-5 pt-5">
         <div class="text-center">
             <h2>Καλώς ήρθατε στην UniAction</h2>
-            <p>Μια διαδικτυακή πλατφόρμα για να ενημερώνεστε και να συμμετέχετε σε δραστηριότητες στον πανεπιστημιακό χώρο.</p>
+            <br>
         </div>
-
         <!-- Search Activities -->
-        <div class="search-container mt-4">
             <form class="d-flex">
-                <input type="text" class="form-control me-2" placeholder="Αναζήτηση δραστηριοτήτων" aria-label="Search">
-            </form>
-            <br>
-            <form class="d-flex">
-                <input type="text" class="form-control me-2" placeholder="Επιλογή Ημερομηνίας" aria-label="Search">
-            </form>
-            <br>
-            <button class="btn btn-primary" type="submit">Αναζήτηση</button>
+                <fieldset>
+                    <select name="Αναζήτηση Δρατηριότητας" class="form-control me-2" id="Αναζήτηση Δρατηριότητας">
+                        <option value="Επιλέξτε Τύπο Δραστηριότητας" disabled selected="selected">Επιλέξτε Τύπο Δραστηριότητας</option>
+                        <option value="Συνέδρια">Συνέδρια</option>
+                        <option value="Εθελοντισμός">Εθελοντισμός</option>
+                        <option value="Ημέρες Καριέρας">Ημέρες Καριέρας</option>
+                        <option value="Ομαδικές Δραστηριότητες">Ομαδικές Δραστηριότητες</option>
+                        <option value="Διαγωνισμοί">Διαγωνισμοί</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <input type="date" class="form-control me-2" placeholder="Επιλογή Ημερομηνίας" aria-label="Search">
+                </fieldset>
+                <button class="btn btn-primary"  type="submit">Αναζήτηση</button>
+            </form>    
         </div>
-
-        <!-- Activities List -->
-        <div class="activities-list mt-5">
-            <h3>Δραστηριότητες</h3>
-            <ul class="list-group">
-                <li class="list-group-item">Συνέδριο για την τεχνολογία</li>
-                <li class="list-group-item">Εθελοντική δράση στο τοπικό πάρκο</li>
-                <li class="list-group-item">Πολιτιστική εκδήλωση: Μουσική βραδιά</li>
-                <li class="list-group-item">Αθλητική ομάδα: Ποδόσφαιρο</li>
-                <li class="list-group-item">Ημέρα Καριέρας 2024</li>
-            </ul>
-        </div>
+    
     </main>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>Συνέδρια</h3>
+            <p>Συμμετοχή σε ακαδημαϊκά συνέδρια και σεμινάρια για να βελτιώσετε τις γνώσεις σας.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Εθελοντικές Δράσεις</h3>
+            <p>Συμβάλετε στην κοινότητα και αποκτήστε εμπειρία μέσω εθελοντικών δράσεων.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Πολιτιστικές Δραστηριότητες</h3>
+            <p>Συμμετέχετε σε πολιτιστικές εκδηλώσεις και γνωρίστε νέους ανθρώπους.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Αθλητικές Ομάδες</h3>
+            <p>Συμμετοχή σε αθλητικές ομάδες για φυσική δραστηριότητα και διασκέδαση.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Ημέρες Καριέρας</h3>
+            <p>Συμμετέχετε σε εκδηλώσεις που ενισχύουν την καριέρα σας με επαγγελματικές ευκαιρίες.</p>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="bg-dark text-white text-center p-3 mt-5">
