@@ -32,19 +32,36 @@
         </nav>
     </header>
 
-    <!-- Main Content: Two Containers and Button -->
+    <!-- Main Content: Carousel for switching between containers -->
     <section class="container-section">
         <h3>Δραστηριότητες</h3>
-        <div class="custom-container">
-            <h3>Εθελοντισμός</h3>
-            <p>Μια ημέρα εθελοντισμού αιμοδοσίας: Φοιτητές συγκεντρώνονται, προσφέρουν αίμα, ενημερώνονται για την αξία της προσφοράς, γιορτάζουν τη ζωή και την αλληλεγγύη. </p>
-            <p><b>20/10/24</b></p>
-        </div>
+        <div id="activityCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="custom-container">
+                        <h3>Εθελοντισμός</h3>
+                        <p>Μια ημέρα εθελοντισμού αιμοδοσίας: Φοιτητές συγκεντρώνονται, προσφέρουν αίμα, ενημερώνονται για την αξία της προσφοράς, γιορτάζουν τη ζωή και την αλληλεγγύη. </p>
+                        <p><b>20/10/24</b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-container">
+                        <h3>Ημέρα καριέρας <b>AUEB</b></h3>
+                        <p>Μια ημέρα καριέρας: Φοιτητές συναντούν επαγγελματίες, συμμετέχουν σε workshops, δικτυώνονται, ανακαλύπτουν ευκαιρίες απασχόλησης και επιδιώκουν το μέλλον τους.</p>
+                        <p><b>20/10/24</b></p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="custom-container">
-            <h3>Ημέρα καριέρας <b>AUEB</b></h3>
-            <p>Μια ημέρα καριέρας: Φοιτητές συναντούν επαγγελματίες, συμμετέχουν σε workshops, δικτυώνονται, ανακαλύπτουν ευκαιρίες απασχόλησης και επιδιώκουν το μέλλον τους.</p>
-            <p><b>20/10/24</b></p>
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#activityCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#activityCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <a href='home_screen.html' class="btn-link">
