@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniAction - Αρχική Σελίδα</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Actions.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="orama.html">
+                <img src="Logo.png" alt="Λογότυπο" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active"><img src="homepic.png" alt="Αρχική Σελίδα" style="width: 24px; height: 24px;"></a>
+                    <span class="nav-text">Αρχική Σελίδα</span>
+                </li>
+                <li>
+                    <a href="SignIn.html"><img src="signinpic.png" alt="Σύνδεση στο Προφίλ" style="width: 24px; height: 24px;"></a>
+                    <span class="nav-text">Σύνδεση στο Προφίλ</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content: Two Containers and Button -->
+    <section class="container-section">
+        <h3>Δραστηριότητες</h3>
+        <div class="custom-container">
+            <h3>Εθελοντισμός</h3>
+            <p>Μια ημέρα εθελοντισμού αιμοδοσίας: Φοιτητές συγκεντρώνονται, προσφέρουν αίμα, ενημερώνονται για την αξία της προσφοράς, γιορτάζουν τη ζωή και την αλληλεγγύη. </p>
+            <p><b>20/10/24</b></p>
+        </div>
+
+        <div class="custom-container">
+            <h3>Ημέρα καριέρας <b>AUEB</b></h3>
+            <p>Μια ημέρα καριέρας: Φοιτητές συναντούν επαγγελματίες, συμμετέχουν σε workshops, δικτυώνονται, ανακαλύπτουν ευκαιρίες απασχόλησης και επιδιώκουν το μέλλον τους.</p>
+            <p><b>20/10/24</b></p>
+        </div>
+
+        <a href='home_screen.html' class="btn-link">
+            <button class="btn btn-custom">Εκ νέου αναζήτηση</button>
+        </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; <span id="currentYear"></span> Φοιτητικές Δραστηριότητες. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+
+    <script>
+        // Update footer year dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
