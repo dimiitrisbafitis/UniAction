@@ -44,10 +44,10 @@
             <h2>Καλώς ήρθατε στην UniAction</h2>
             <br>
         </div>
-            <form class="d-flex flex-column" name="Φόρμα_Αναζήτηση"> <!--action="" method"Post"-->
+            <form class="d-flex flex-column" name="Φόρμα_Αναζήτηση"> <!--action="" method="post"-->
                 <fieldset>
-                    <select name="Αναζήτηση Δρατηριότητας" class="form-control mb-3" id="Αναζήτηση Δρατηριότητας">
-                        <option value="Επιλέξτε Τύπο Δραστηριότητας" disabled selected="selected">Επιλέξτε Τύπο Δραστηριότητας</option>
+                    <select name="Αναζήτηση_Δρατηριότητας" class="form-control mb-3" id="Αναζήτηση_Δρατηριότητας">
+                        <option value="Επιλέξτε Τύπο Δραστηριότητας" disabled selected>Επιλέξτε Τύπο Δραστηριότητας</option>
                         <option value="Συνέδρια">Συνέδρια</option>
                         <option value="Εθελοντισμός">Εθελοντισμός</option>
                         <option value="Ημέρες Καριέρας">Ημέρες Καριέρας</option>
@@ -56,13 +56,12 @@
                     </select>
                 </fieldset>
                 <fieldset>  
-                    <input type="date" class="form-control mb-3" placeholder="Επιλογή Ημερομηνίας" aria-label="Search" name="Ημερομηνία">
+                    <input type="date" class="form-control mb-3" name="Ημερομηνία" id="Ημερομηνία" title="Δεν μπορείτε να επιλέξετε ημερομηνία πριν από τη σημερινή.">
                 </fieldset>
                 <button class="btn btn-primary"  type="submit" name="Submit">Αναζήτηση</button>
             </form>    
-        </div>
-    
     </main>
+    <script src="datescript.js"></script>
 
     <section class="features">
         <div class="feature-box">
