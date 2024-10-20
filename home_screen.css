@@ -141,3 +141,8 @@ section.features {
     font-size: 16px;
     color: #2e7d32; /* Χρώμα για τα κείμενα των feature boxes */
 }
+
+.logo-container a {
+    text-decoration: none;
+    color: inherit;
+}
