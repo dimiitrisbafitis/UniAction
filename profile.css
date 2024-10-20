@@ -1,5 +1,5 @@
 body {
-    background-color: #e7f1e2;
+    background-color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
     padding-top: 80px;
 }
@@ -32,7 +32,7 @@ header img.logo {
 header h1 {
     font-size: 30px;
     font-weight: 600;
-    color: #ffffff; /* Text color for the title */
+    color: #333333; /* Text color for the title */
 }
 
 header nav {
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background-color: #206a27; /* Hover color for navbar links */
+    background-color: #0da692; /* Hover color for navbar links */
     color: #ffffff; /* Text color on hover */
     border-radius: 5px;
 }
@@ -96,7 +96,7 @@ nav ul li:hover .nav-text {
 }
  
 .card-header {
-    background-color: #206a27;
+    background-color: #00BFA6;
     color: white;
     font-weight: bold;
     text-align: center;

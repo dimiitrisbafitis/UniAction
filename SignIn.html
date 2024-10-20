@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>UniAction</title>
-    <link rel="stylesheet" href="SignUp.css">
+    <title>UniAction - Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="signIn.css">
 </head>
 <body>
-    <div class="container">
-        <div class="overlay">
-            <div class="content">
-                <h1>UniAction</h1>
-                <p>Sign In</p>
-            </div>
-            <div class="form-section">
-                <ul class="form-list">
-                    <li><input type="email" placeholder="Email"></li>
-                    <li><input type="password" placeholder="Password"></li>
-                </ul>
-                <button class="submit-button">Submit</button>
+ 
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.png" alt="Λογότυπο" class="logo">
+            <h1>UniAction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class=""><i class="fas fa-home"></i></a>
+                    <span class="nav-text">Αρχική Σελίδα</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                    <span class="nav-text">Δραστηριότητες</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <span class="nav-text">Επικοινωνία</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <span class="nav-text">Προφίλ</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto"> <!-- Center the column -->
+                <h2 class="text-center">Sign In</h2> <!-- Center the heading -->
+                <br>
+                <br>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <label for="firstName" class="form-label">ΟΝΟΜΑ</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" required>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <label for="password" class="form-label">ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ</label>
+                            <input type="password" class="form-control" id="password" placeholder="" required>
+                        </div>
+ 
+                    </div>
+                    <br>
+ 
+                    <button class="w-100 btn btn-primary btn-lg mt-3" type="submit">ΣΥΝΔΕΣΗ</button>
+                </form>
             </div>
         </div>
     </div>
+    <br>
+ 
+    <footer>
+        <p>&copy; 2024 UniAction. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
