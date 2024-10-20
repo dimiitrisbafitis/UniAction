@@ -10,3 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ορισμός του min attribute στο στοιχείο input
     document.getElementById('Ημερομηνία').setAttribute('min', today);
 });
+document.getElementById('Ημερομηνία').addEventListener('change', function() {
+    this.blur();
+});
