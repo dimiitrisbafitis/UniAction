@@ -1,3 +1,6 @@
+/* Import Montserrat from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 /* Body Styles */
 body {
     background-color: #f4f4f4;
@@ -6,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Make sure body takes at least the full height of the viewport */
+    font-family: 'Montserrat', sans-serif; /* Αλλάξαμε τη γραμματοσειρά σε Montserrat */
 }
 
 /* Main Container */
