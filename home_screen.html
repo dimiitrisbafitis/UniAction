@@ -44,7 +44,7 @@
             <h2>Καλώς ήρθατε στην UniAction</h2>
             <br>
         </div>
-            <form class="d-flex flex-column">
+            <form class="d-flex flex-column" name="Φόρμα_Αναζήτηση"> <!--action="" method"Post"-->
                 <fieldset>
                     <select name="Αναζήτηση Δρατηριότητας" class="form-control mb-3" id="Αναζήτηση Δρατηριότητας">
                         <option value="Επιλέξτε Τύπο Δραστηριότητας" disabled selected="selected">Επιλέξτε Τύπο Δραστηριότητας</option>
@@ -55,10 +55,10 @@
                         <option value="Διαγωνισμοί">Διαγωνισμοί</option>
                     </select>
                 </fieldset>
-                <fieldset>
-                    <input type="date" class="form-control mb-3" placeholder="Επιλογή Ημερομηνίας" aria-label="Search">
+                <fieldset>  
+                    <input type="date" class="form-control mb-3" placeholder="Επιλογή Ημερομηνίας" aria-label="Search" name="Ημερομηνία">
                 </fieldset>
-                <button class="btn btn-primary"  type="submit">Αναζήτηση</button>
+                <button class="btn btn-primary"  type="submit" name="Submit">Αναζήτηση</button>
             </form>    
         </div>
     
