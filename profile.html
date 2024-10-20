@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniAction - Προφίλ Χρήστη</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="profile.css"> <!-- Custom CSS file -->
+</head>
+<body>
+ 
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.png" alt="Λογότυπο" class="logo">
+            <h1>UniAction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active"><i class="fas fa-home"></i></a>
+                    <span class="nav-text">Αρχική Σελίδα</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                    <span class="nav-text">Δραστηριότητες</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <span class="nav-text">Επικοινωνία</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <span class="nav-text">Προφίλ</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="container mt-5 pt-5">
+        <div class="profile-header text-center">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150" height="150">
+            <h2>Όνομα Χρήστη</h2>
+            <p>Email: user@example.com</p>
+        </div>
+ 
+        <div class="profile-content mt-5">
+            <div class="row">
+                <!-- Προσωπικά Στοιχεία -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Προσωπικές Πληροφορίες</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Όνομα:</strong> Όνομα Χρήστη</p>
+                            <p><strong>Email:</strong> user@example.com</p>
+                            <p><strong>Πανεπιστήμιο:</strong> Πανεπιστήμιο Χ</p>
+                            <p><strong>Τμήμα:</strong> Τμήμα Υ</p>
+                            <p><strong>Έτος Σπουδών:</strong> 3ο Έτος</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Συμμετοχές σε Δραστηριότητες -->
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Συμμετοχές σε Δραστηριότητες</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <strong>Συνέδριο Τεχνητής Νοημοσύνης</strong> - Μάιος 2023
+                                    <p>Συμμετοχή ως ακροατής και εθελοντής.</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Ημέρα Καριέρας 2023</strong> - Απρίλιος 2023
+                                    <p>Συμμετοχή σε εργαστήρια και συναντήσεις με επαγγελματίες.</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Εθελοντική Δράση "Καθαρισμός Παραλίας"</strong> - Ιούνιος 2022
+                                    <p>Συμμετοχή ως εθελοντής για την προστασία του περιβάλλοντος.</p>
+                                </li>
+                                <!-- Περισσότερες συμμετοχές -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="row mt-5">
+                <!-- Δεξιότητες και Εμπειρίες -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Δεξιότητες και Εμπειρίες</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <strong>Δεξιότητα:</strong> Διαχείριση Ομάδων
+                                    <p>Ανάπτυξη ικανοτήτων στην οργάνωση και ηγεσία μέσω συμμετοχής σε εθελοντικές δράσεις.</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Δεξιότητα:</strong> Επικοινωνιακές Δεξιότητες
+                                    <p>Βελτίωση δεξιοτήτων στην επικοινωνία μέσω συμμετοχής σε συνέδρια και ημερίδες καριέρας.</p>
+                                </li>
+                                <!-- Περισσότερες δεξιότητες -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+ 
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 UniAction. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
