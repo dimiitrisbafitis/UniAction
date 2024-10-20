@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#" class="active"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="fas fa-home"></i></a>
                     <span class="nav-text">Αρχική Σελίδα</span>
                 </li>
                 <li>
@@ -31,7 +31,7 @@
                     <span class="nav-text">Επικοινωνία</span>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#" class="active"><i class="fas fa-user"></i></a><!--To active δείχνει ότι είναι ενεργή-->
                     <span class="nav-text">Προφίλ</span>
                 </li>
             </ul>
@@ -40,8 +40,8 @@
  
     <main class="container mt-5 pt-5">
         <div class="profile-header text-center">
-            <img src="profile-picture.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150" height="150">
-            <h2>Όνομα Χρήστη</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150" height="150">
+            <h2>Όνομα Χρήστη</h2> <!--Κάπως θα πρέπει να τα στέλνουμε αυτά τα δεδομένα.-->
             <p>Email: user@example.com</p>
         </div>
  
@@ -125,3 +125,31 @@
 </body>
 </html>
  
+
+
+
+
+<!-- Για την αποστολή δεδομένων-->
+<!--<form method="POST" action="submit_profile.php">
+    <div class="mb-3">
+        <label for="username" class="form-label">Όνομα Χρήστη</label>
+        <input type="text" class="form-control" id="username" name="username" value="Όνομα Χρήστη">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" value="user@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="university" class="form-label">Πανεπιστήμιο</label>
+        <input type="text" class="form-control" id="university" name="university" value="Πανεπιστήμιο Χ">
+    </div>
+    <div class="mb-3">
+        <label for="department" class="form-label">Τμήμα</label>
+        <input type="text" class="form-control" id="department" name="department" value="Τμήμα Υ">
+    </div>
+    <div class="mb-3">
+        <label for="year" class="form-label">Έτος Σπουδών</label>
+        <input type="number" class="form-control" id="year" name="year" value="3">
+    </div>
+    <button type="submit" class="btn btn-primary">Αποθήκευση Αλλαγών</button>
+</form>-->

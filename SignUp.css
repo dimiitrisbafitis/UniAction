@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #b2dfdb; /* Light blue*/
+    background-color: #ffffff; /* Light blue*/
     color: #333;
     height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .overlay {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
+    background-color: #b2dfdb; /* Semi-transparent white overlay */
     border-radius: 30px;
     padding: 40px;
     text-align: center;

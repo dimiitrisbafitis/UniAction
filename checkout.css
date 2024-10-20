@@ -1,6 +1,6 @@
 /* Body Styles */
 body {
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
     margin: 0;
     padding-top: 80px; /* Padding to prevent overlap with navbar */
     display: flex;
@@ -10,7 +10,7 @@ body {
 
 /* Main Container */
 .container {
-    max-width: 960px;
+    max-width: 750px;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
@@ -34,7 +34,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #4b6cb3; /* Background color for the navbar */
+    background-color: #00bfa6; /* Background color for the navbar */
     color: #ffffff; /* Text color for the navbar */
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ header img.logo {
 header h1 {
     font-size: 30px;
     font-weight: 600;
-    color: #ffffff; /* Text color for the title */
+    color: #333; /* Text color for the title */
 }
 
 header nav {
@@ -83,7 +83,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background-color: #849ad7; /* Hover color for navbar links */
+    background-color: #0da692; /* Hover color for navbar links */
     color: #ffffff; /* Text color on hover */
     border-radius: 5px;
 }
@@ -139,4 +139,14 @@ footer p {
     .container {
         padding: 15px;
     }
+}
+
+.btn-primary {
+    background-color: #00bfa6 !important;
+    border-color: #00bfa6 !important;
+}
+
+.btn-primary:hover {
+    background-color: #0da692 !important;
+    border-color: #0da692 !important;
 }
