@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif; /* Set Montserrat as the default font */
 }
 
+/* Navbar Styles */
 header {
     position: fixed;
     top: 0;
@@ -36,7 +37,7 @@ header img.logo {
 header h1 {
     font-size: 30px;
     font-weight: 600;
-    color: #333333; /* Text color for the title */
+    color: #ffffff; /* Text color for the title */
 }
 
 header nav {
@@ -68,6 +69,7 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: 5px;
 }
 
+/* Tooltip Styles */
 nav ul li .nav-text {
     position: absolute;
     top: 100%;
@@ -89,6 +91,42 @@ nav ul li:hover .nav-text {
     visibility: visible;
 }
 
+/* Main Container */
+.custom-container {
+    max-width: 750px;
+    background-color: white;
+    padding: 40px; /* Reduced padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center container horizontally */
+}
+
+/* Vision Section Styles */
+.vision-section {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px; /* Padding around the text */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin above and below */
+}
+
+.vision-section h2 {
+    font-family: 'Montserrat', sans-serif; /* Font for the title */
+    font-size: 28px; /* Title font size */
+    color: #00BFA6; /* Title color */
+    text-align: center; /* Center title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.vision-section p {
+    font-family: 'Poppins', sans-serif; /* Font for the paragraphs */
+    font-size: 18px; /* Paragraph font size */
+    color: #333; /* Text color */
+    margin-bottom: 15px; /* Space below each paragraph */
+    text-align: justify; /* Justify text */
+}
+
+/* Footer Styles */
 footer {
     background-color: #333; /* Dark background for the footer */
     color: white; /* White text */
@@ -104,67 +142,31 @@ footer p {
     margin: 0;
 }
 
-/* Main Container */
-.custom-container {
-    max-width: 350px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Center container horizontally */
-}
-
 /* Responsive Design */
-
-section.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px 20px;
-    background-color: #ffffff; /* Λευκό background για τα features */
-}
-
-.feature-box {
-    background-color: #ffffff; /* Λευκό background για τα feature boxes */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    text-align: center;
-    padding: 30px;
-    width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.feature-box:hover {
-    transform: translateY(-10px);
-}
-
-.feature-box h3 {
-    margin-bottom: 20px;
-    font-size: 22px;
-    color: #00BFA6; /* Χρώμα για τους τίτλους στα feature boxes */
-}
-
-.feature-box p {
-    font-size: 16px;
-    color: #333333; /* Χρώμα για τα κείμενα των feature boxes */
-}
-
-.logo-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
 @media (max-width: 768px) {
-    .feature-box {
-        width: 100%;
-        margin-bottom: 20px;
+    .custom-container {
+        padding: 20px; /* Reduced padding for smaller screens */
     }
 
-    section.features {
+    header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .vision-section h2 {
+        font-size: 24px; /* Smaller title size */
+    }
+
+    .vision-section p {
+        font-size: 16px; /* Smaller paragraph size */
     }
 }
 
+/* Button Styles */
 .btn-primary {
     background-color: #00bfa6 !important;
     border-color: #00bfa6 !important;
