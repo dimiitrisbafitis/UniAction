@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniAction - Συγχαρητήρια!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="action.css">
+    <link rel="icon" type="image/png" href="logo_small.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="orama.html">
+                <img src="Logo.png" alt="Λογότυπο" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home_screen.html" class="active"><img src="homepic.png" alt="Αρχική Σελίδα" style="width: 24px; height: 24px;"></a>
+                    <span class="nav-text">Αρχική Σελίδα</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center">
+            <h1 class="mb-4">Συγχαρητήρια!</h1>
+            <p class="lead">Λάβατε επιτυχώς συμμετοχή στην δραστηριότητα!</p>
+        </div>
+        <canvas id="confettiCanvas"></canvas>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="currentYear"></span> Φοιτητικές Δραστηριότητες. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+
+    <script>
+        // Update footer year dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+
+        // Confetti animation
+        const confettiCanvas = document.getElementById('confettiCanvas');
+        const ctx = confettiCanvas.getContext('2d');
+        confettiCanvas.width = window.innerWidth;
+        confettiCanvas.height = window.innerHeight;
+
+        const confettiElements = [];
+
+        function ConfettiParticle(x, y, dx, dy, size, color) {
+            this.x = x;
+            this.y = y;
+            this.dx = dx;
+            this.dy = dy;
+            this.size = size;
+            this.color = color;
+
+            this.draw = function() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            };
+
+            this.update = function() {
+                this.x += this.dx;
+                this.y += this.dy;
+
+                if (this.y > confettiCanvas.height) {
+                    this.y = -this.size;
+                    this.x = Math.random() * confettiCanvas.width;
+                }
+
+                this.draw();
+            };
+        }
+
+        function generateConfetti() {
+            const colors = ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#00BFA6', '#FFA726', '#26C6DA'];
+            for (let i = 0; i < 300; i++) {
+                const size = Math.random() * 5 + 2;
+                const x = Math.random() * confettiCanvas.width;
+                const y = Math.random() * confettiCanvas.height;
+                const dx = Math.random() * 2 - 1;
+                const dy = Math.random() * 3 + 1;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                confettiElements.push(new ConfettiParticle(x, y, dx, dy, size, color));
+            }
+        }
+
+        function animateConfetti() {
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confettiElements.forEach(particle => particle.update());
+            requestAnimationFrame(animateConfetti);
+        }
+
+        generateConfetti();
+        animateConfetti();
+
+        // Resize canvas when window size changes
+        window.addEventListener('resize', function() {
+            confettiCanvas.width = window.innerWidth;
+            confettiCanvas.height = window.innerHeight;
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
