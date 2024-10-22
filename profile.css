@@ -122,3 +122,80 @@ footer {
     margin-top: 30px; /* Προσθέτουμε κενό μεταξύ του περιεχομένου και του footer */
     text-align: center; /* Τοποθετούμε το κείμενο στο κέντρο */
 }
+/*tablets*/
+@media (max-width: 992px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+
+    .profile-header h2 {
+        font-size: 26px;
+    }
+
+    .card-header {
+        font-size: 18px;
+    }
+
+    .list-group-item {
+        font-size: 14px;
+    }
+}
+
+/*phones*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header img.logo {
+        height: 40px;
+        margin-right: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .profile-header h2 {
+        font-size: 22px;
+    }
+
+    .card-header {
+        font-size: 16px;
+    }
+
+    .list-group-item {
+        font-size: 12px;
+    }
+
+    /* Profile picture */
+    .profile-header img {
+        width: 120px;
+        height: 120px;
+    }
+}
+

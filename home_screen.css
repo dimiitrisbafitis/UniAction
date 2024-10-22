@@ -190,3 +190,41 @@ section.features {
     background-color: #0da692 !important;
     border-color: #0da692 !important;
 }
+@media (max-width: 767px) {
+    body {
+        padding-top: 60px; /* Reduce padding for mobile */
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .main-background {
+        background-attachment: scroll; 
+    }
+
+    .custom-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    section.features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
