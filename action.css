@@ -30,12 +30,6 @@ header img.logo {
     margin-right: 15px;
 }
 
-header h1 {
-    font-size: 30px;
-    font-weight: 600;
-    color: #ffffff; /* Text color for the title */
-}
-
 header nav {
     display: flex;
 }
@@ -87,6 +81,11 @@ nav ul li:hover .nav-text {
     visibility: visible;
 }
 
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
 main {
     padding-top: 80px; /* Avoid overlap with fixed header */
 }
@@ -125,8 +124,6 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     padding: 15px 0;
 }

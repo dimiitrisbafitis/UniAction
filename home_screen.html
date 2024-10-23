@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home_screen.css">
-    <link rel="icon" type="image/png" href="logo_small.png"> 
+    <link rel="icon" type="image/png" href="images/logo_small.png"> 
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <a href="orama.html">
-                <img src="Logo.png" alt="Λογότυπο" class="logo">
+            <a href="#">
+                <img src="images/Logo.png" alt="Λογότυπο UniAction" class="logo">
             </a>
         </div>
         <nav>
             <ul>
                 <li>
-                    <a href="#" class="active"><img src="homepic.png" alt="Αρχική Σελίδα" style="width: 24px; height: 24px;"></a>
+                    <a href="#" class="active"><img src="images/homepic.png" alt="Αρχική Σελίδα" style="width: 24px; height: 24px;"></a>
                     <span class="nav-text">Αρχική Σελίδα</span>
                 </li>
                 <li>
-                    <a href="SignIn.html"><img src="signinpic.png" alt="Σύνδεση στο Προφίλ" style="width: 24px; height: 24px;"></a>
+                    <a href="SignIn.html"><img src="images/signinpic.png" alt="Σύνδεση στο Προφίλ" style="width: 24px; height: 24px;"></a>
                     <span class="nav-text">Σύνδεση στο Προφίλ</span>
                 </li>
             </ul>
@@ -36,12 +36,12 @@
     <div class="main-background">
         <main class="custom-container mt-5 pt-5">
             <div class="text-center">
-                <h2>Καλώς ήρθατε στην UniAction</h2>
+                <h1>Καλώς ήρθατε στην UniAction</h>
                 <br>
             </div>
-            <form  action="action.html" class="d-flex flex-column" name="Φόρμα_Αναζήτηση">
+            <form  action="action.html" method="get" class="d-flex flex-column" name="search_form">
                 <fieldset>
-                    <select name="Αναζήτηση_Δρατηριότητας" class="form-control mb-3" id="Αναζήτηση_Δρατηριότητας">
+                    <select name="activity_search" class="form-control mb-3" id="activity_search">
                         <option value="" disabled selected>Επιλέξτε Τύπο Δραστηριότητας</option>
                         <option value="Συνέδρια">Συνέδρια</option>
                         <option value="Εθελοντισμός">Εθελοντισμός</option>
